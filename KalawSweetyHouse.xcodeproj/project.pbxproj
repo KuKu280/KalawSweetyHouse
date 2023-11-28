@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1307FB91FC4F29ECB445B7B1 /* Pods_KalawSweetyHouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84FD2D6D889BE5826EFA6BE /* Pods_KalawSweetyHouseTests.framework */; };
+		41958805F25E14F0410374BD /* Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CAD8400D19E40FE2FAA19D /* Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework */; };
 		78AA53AD2B162F8500A63F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53AC2B162F8500A63F33 /* AppDelegate.swift */; };
 		78AA53AF2B162F8500A63F33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53AE2B162F8500A63F33 /* SceneDelegate.swift */; };
 		78AA53B62B162F8600A63F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AA53B52B162F8600A63F33 /* Assets.xcassets */; };
@@ -16,6 +18,13 @@
 		78AA53D02B162F8600A63F33 /* KalawSweetyHouseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53CF2B162F8600A63F33 /* KalawSweetyHouseUITestsLaunchTests.swift */; };
 		78AA53E42B1633BB00A63F33 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53E32B1633BB00A63F33 /* App.swift */; };
 		78AA53E62B16366700A63F33 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53E52B16366700A63F33 /* main.swift */; };
+		78AA53E92B1638E900A63F33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78AA53E82B1638E900A63F33 /* GoogleService-Info.plist */; };
+		78AA96892B1647C5003D8FC8 /* FirebaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA96882B1647C5003D8FC8 /* FirebaseApi.swift */; };
+		78AA968B2B164856003D8FC8 /* CloudFireStoreFirebaseApiImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA968A2B164856003D8FC8 /* CloudFireStoreFirebaseApiImpl.swift */; };
+		78AA968E2B1648C3003D8FC8 /* KSHRespnse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA968D2B1648C3003D8FC8 /* KSHRespnse.swift */; };
+		78AA96932B16508F003D8FC8 /* DashBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA96912B16508F003D8FC8 /* DashBoardController.swift */; };
+		78AA96942B16508F003D8FC8 /* DashBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78AA96922B16508F003D8FC8 /* DashBoardController.xib */; };
+		AC5A65375F44BBC99788AA2F /* Pods_KalawSweetyHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA6EC08D37CBBEE9C235777 /* Pods_KalawSweetyHouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10132A49DAEB02849361BA50 /* Pods-KalawSweetyHouse-KalawSweetyHouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouse-KalawSweetyHouseUITests.release.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouse-KalawSweetyHouseUITests/Pods-KalawSweetyHouse-KalawSweetyHouseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		215F8649976CF41F7B16BBE3 /* Pods-KalawSweetyHouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouseTests.release.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouseTests/Pods-KalawSweetyHouseTests.release.xcconfig"; sourceTree = "<group>"; };
+		37CAD8400D19E40FE2FAA19D /* Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		385351785C404A646968E977 /* Pods-KalawSweetyHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouse.debug.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouse/Pods-KalawSweetyHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		6FA6EC08D37CBBEE9C235777 /* Pods_KalawSweetyHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalawSweetyHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		734FBD1330B711F874715CC0 /* Pods-KalawSweetyHouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouseTests.debug.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouseTests/Pods-KalawSweetyHouseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		78AA53A92B162F8500A63F33 /* KalawSweetyHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalawSweetyHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AA53AC2B162F8500A63F33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78AA53AE2B162F8500A63F33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,16 @@
 		78AA53CF2B162F8600A63F33 /* KalawSweetyHouseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalawSweetyHouseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		78AA53E32B1633BB00A63F33 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		78AA53E52B16366700A63F33 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		78AA53E82B1638E900A63F33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78AA96882B1647C5003D8FC8 /* FirebaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApi.swift; sourceTree = "<group>"; };
+		78AA968A2B164856003D8FC8 /* CloudFireStoreFirebaseApiImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFireStoreFirebaseApiImpl.swift; sourceTree = "<group>"; };
+		78AA968D2B1648C3003D8FC8 /* KSHRespnse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSHRespnse.swift; sourceTree = "<group>"; };
+		78AA96912B16508F003D8FC8 /* DashBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardController.swift; sourceTree = "<group>"; };
+		78AA96922B16508F003D8FC8 /* DashBoardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardController.xib; sourceTree = "<group>"; };
+		78AA96962B165A1A003D8FC8 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C94DF39B0A0D2A5A40CDD1 /* Pods-KalawSweetyHouse-KalawSweetyHouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouse-KalawSweetyHouseUITests.debug.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouse-KalawSweetyHouseUITests/Pods-KalawSweetyHouse-KalawSweetyHouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D84FD2D6D889BE5826EFA6BE /* Pods_KalawSweetyHouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalawSweetyHouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84351CCEE36B1D179B4A49A /* Pods-KalawSweetyHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouse.release.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouse/Pods-KalawSweetyHouse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5A65375F44BBC99788AA2F /* Pods_KalawSweetyHouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1307FB91FC4F29ECB445B7B1 /* Pods_KalawSweetyHouseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +97,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41958805F25E14F0410374BD /* Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E726EC6BF042D5D350CA08E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78AA96962B165A1A003D8FC8 /* FSCalendar.framework */,
+				6FA6EC08D37CBBEE9C235777 /* Pods_KalawSweetyHouse.framework */,
+				37CAD8400D19E40FE2FAA19D /* Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework */,
+				D84FD2D6D889BE5826EFA6BE /* Pods_KalawSweetyHouseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78AA53A02B162F8500A63F33 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				78AA53C22B162F8600A63F33 /* KalawSweetyHouseTests */,
 				78AA53CC2B162F8600A63F33 /* KalawSweetyHouseUITests */,
 				78AA53AA2B162F8500A63F33 /* Products */,
+				AF5147C84271B70769C77E45 /* Pods */,
+				3E726EC6BF042D5D350CA08E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +140,8 @@
 		78AA53AB2B162F8500A63F33 /* KalawSweetyHouse */ = {
 			isa = PBXGroup;
 			children = (
+				78AA968C2B16489D003D8FC8 /* Data */,
+				78AA96872B1647B7003D8FC8 /* Network */,
 				78AA53E22B1632CB00A63F33 /* PresentationLayer */,
 				78AA53DF2B1631F800A63F33 /* Storyboards */,
 				78AA53DC2B16305500A63F33 /* Application */,
@@ -127,6 +170,7 @@
 		78AA53DC2B16305500A63F33 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				78AA53E72B1638D600A63F33 /* googleInfo */,
 				78AA53E02B16320100A63F33 /* Info */,
 				78AA53DD2B16306000A63F33 /* AppDelegate */,
 				78AA53DE2B16308800A63F33 /* SceneDelegate */,
@@ -179,8 +223,56 @@
 		78AA53E22B1632CB00A63F33 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				78AA96952B165093003D8FC8 /* DashBoard */,
 			);
 			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		78AA53E72B1638D600A63F33 /* googleInfo */ = {
+			isa = PBXGroup;
+			children = (
+				78AA53E82B1638E900A63F33 /* GoogleService-Info.plist */,
+			);
+			path = googleInfo;
+			sourceTree = "<group>";
+		};
+		78AA96872B1647B7003D8FC8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				78AA96882B1647C5003D8FC8 /* FirebaseApi.swift */,
+				78AA968A2B164856003D8FC8 /* CloudFireStoreFirebaseApiImpl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		78AA968C2B16489D003D8FC8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				78AA968D2B1648C3003D8FC8 /* KSHRespnse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		78AA96952B165093003D8FC8 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				78AA96912B16508F003D8FC8 /* DashBoardController.swift */,
+				78AA96922B16508F003D8FC8 /* DashBoardController.xib */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		AF5147C84271B70769C77E45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				385351785C404A646968E977 /* Pods-KalawSweetyHouse.debug.xcconfig */,
+				E84351CCEE36B1D179B4A49A /* Pods-KalawSweetyHouse.release.xcconfig */,
+				91C94DF39B0A0D2A5A40CDD1 /* Pods-KalawSweetyHouse-KalawSweetyHouseUITests.debug.xcconfig */,
+				10132A49DAEB02849361BA50 /* Pods-KalawSweetyHouse-KalawSweetyHouseUITests.release.xcconfig */,
+				734FBD1330B711F874715CC0 /* Pods-KalawSweetyHouseTests.debug.xcconfig */,
+				215F8649976CF41F7B16BBE3 /* Pods-KalawSweetyHouseTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AA53D32B162F8600A63F33 /* Build configuration list for PBXNativeTarget "KalawSweetyHouse" */;
 			buildPhases = (
+				D9A528C7C661F066D07855A5 /* [CP] Check Pods Manifest.lock */,
 				78AA53A52B162F8500A63F33 /* Sources */,
 				78AA53A62B162F8500A63F33 /* Frameworks */,
 				78AA53A72B162F8500A63F33 /* Resources */,
+				5D5E033144F186B968C6FE62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +301,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AA53D62B162F8600A63F33 /* Build configuration list for PBXNativeTarget "KalawSweetyHouseTests" */;
 			buildPhases = (
+				B010B8288527F75A66B9873B /* [CP] Check Pods Manifest.lock */,
 				78AA53BB2B162F8600A63F33 /* Sources */,
 				78AA53BC2B162F8600A63F33 /* Frameworks */,
 				78AA53BD2B162F8600A63F33 /* Resources */,
@@ -225,9 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78AA53D92B162F8600A63F33 /* Build configuration list for PBXNativeTarget "KalawSweetyHouseUITests" */;
 			buildPhases = (
+				E6C5B1E1587143C69B54EB71 /* [CP] Check Pods Manifest.lock */,
 				78AA53C52B162F8600A63F33 /* Sources */,
 				78AA53C62B162F8600A63F33 /* Frameworks */,
 				78AA53C72B162F8600A63F33 /* Resources */,
+				4E98EAF24EC46D36A5B841BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,7 +360,7 @@
 				};
 			};
 			buildConfigurationList = 78AA53A42B162F8500A63F33 /* Build configuration list for PBXProject "KalawSweetyHouse" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -287,8 +384,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AA96942B16508F003D8FC8 /* DashBoardController.xib in Resources */,
 				78AA53B92B162F8600A63F33 /* LaunchScreen.storyboard in Resources */,
 				78AA53B62B162F8600A63F33 /* Assets.xcassets in Resources */,
+				78AA53E92B1638E900A63F33 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,15 +407,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E98EAF24EC46D36A5B841BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KalawSweetyHouse-KalawSweetyHouseUITests/Pods-KalawSweetyHouse-KalawSweetyHouseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KalawSweetyHouse-KalawSweetyHouseUITests/Pods-KalawSweetyHouse-KalawSweetyHouseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KalawSweetyHouse-KalawSweetyHouseUITests/Pods-KalawSweetyHouse-KalawSweetyHouseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5E033144F186B968C6FE62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KalawSweetyHouse/Pods-KalawSweetyHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KalawSweetyHouse/Pods-KalawSweetyHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KalawSweetyHouse/Pods-KalawSweetyHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B010B8288527F75A66B9873B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalawSweetyHouseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9A528C7C661F066D07855A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalawSweetyHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C5B1E1587143C69B54EB71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalawSweetyHouse-KalawSweetyHouseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78AA53A52B162F8500A63F33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AA96932B16508F003D8FC8 /* DashBoardController.swift in Sources */,
 				78AA53E42B1633BB00A63F33 /* App.swift in Sources */,
+				78AA96892B1647C5003D8FC8 /* FirebaseApi.swift in Sources */,
 				78AA53AD2B162F8500A63F33 /* AppDelegate.swift in Sources */,
 				78AA53E62B16366700A63F33 /* main.swift in Sources */,
 				78AA53AF2B162F8500A63F33 /* SceneDelegate.swift in Sources */,
+				78AA968B2B164856003D8FC8 /* CloudFireStoreFirebaseApiImpl.swift in Sources */,
+				78AA968E2B1648C3003D8FC8 /* KSHRespnse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +686,7 @@
 		};
 		78AA53D42B162F8600A63F33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385351785C404A646968E977 /* Pods-KalawSweetyHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -507,6 +714,7 @@
 		};
 		78AA53D52B162F8600A63F33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84351CCEE36B1D179B4A49A /* Pods-KalawSweetyHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -534,6 +742,7 @@
 		};
 		78AA53D72B162F8600A63F33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734FBD1330B711F874715CC0 /* Pods-KalawSweetyHouseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +763,7 @@
 		};
 		78AA53D82B162F8600A63F33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 215F8649976CF41F7B16BBE3 /* Pods-KalawSweetyHouseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +784,7 @@
 		};
 		78AA53DA2B162F8600A63F33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C94DF39B0A0D2A5A40CDD1 /* Pods-KalawSweetyHouse-KalawSweetyHouseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +803,7 @@
 		};
 		78AA53DB2B162F8600A63F33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10132A49DAEB02849361BA50 /* Pods-KalawSweetyHouse-KalawSweetyHouseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

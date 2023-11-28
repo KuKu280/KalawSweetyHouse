@@ -41,9 +41,7 @@ extension App {
 extension App {
     /// Render
     func renderDashboard() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .yellow
-        setRoot(viewController: viewController)
+        setRoot(viewController: DashBoardController())
     }
 }
 
