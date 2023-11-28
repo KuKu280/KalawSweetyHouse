@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		78AA53AD2B162F8500A63F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53AC2B162F8500A63F33 /* AppDelegate.swift */; };
 		78AA53AF2B162F8500A63F33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53AE2B162F8500A63F33 /* SceneDelegate.swift */; };
-		78AA53B12B162F8500A63F33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53B02B162F8500A63F33 /* ViewController.swift */; };
-		78AA53B42B162F8500A63F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AA53B22B162F8500A63F33 /* Main.storyboard */; };
 		78AA53B62B162F8600A63F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AA53B52B162F8600A63F33 /* Assets.xcassets */; };
 		78AA53B92B162F8600A63F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AA53B72B162F8600A63F33 /* LaunchScreen.storyboard */; };
 		78AA53C42B162F8600A63F33 /* KalawSweetyHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53C32B162F8600A63F33 /* KalawSweetyHouseTests.swift */; };
 		78AA53CE2B162F8600A63F33 /* KalawSweetyHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53CD2B162F8600A63F33 /* KalawSweetyHouseUITests.swift */; };
 		78AA53D02B162F8600A63F33 /* KalawSweetyHouseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53CF2B162F8600A63F33 /* KalawSweetyHouseUITestsLaunchTests.swift */; };
+		78AA53E42B1633BB00A63F33 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53E32B1633BB00A63F33 /* App.swift */; };
+		78AA53E62B16366700A63F33 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53E52B16366700A63F33 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		78AA53A92B162F8500A63F33 /* KalawSweetyHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalawSweetyHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AA53AC2B162F8500A63F33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78AA53AE2B162F8500A63F33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78AA53B02B162F8500A63F33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		78AA53B32B162F8500A63F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78AA53B52B162F8600A63F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78AA53B82B162F8600A63F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78AA53BA2B162F8600A63F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		78AA53C92B162F8600A63F33 /* KalawSweetyHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalawSweetyHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AA53CD2B162F8600A63F33 /* KalawSweetyHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalawSweetyHouseUITests.swift; sourceTree = "<group>"; };
 		78AA53CF2B162F8600A63F33 /* KalawSweetyHouseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalawSweetyHouseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78AA53E32B1633BB00A63F33 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		78AA53E52B16366700A63F33 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,10 @@
 		78AA53AB2B162F8500A63F33 /* KalawSweetyHouse */ = {
 			isa = PBXGroup;
 			children = (
+				78AA53E22B1632CB00A63F33 /* PresentationLayer */,
+				78AA53DF2B1631F800A63F33 /* Storyboards */,
 				78AA53DC2B16305500A63F33 /* Application */,
-				78AA53B02B162F8500A63F33 /* ViewController.swift */,
-				78AA53B22B162F8500A63F33 /* Main.storyboard */,
-				78AA53B52B162F8600A63F33 /* Assets.xcassets */,
-				78AA53B72B162F8600A63F33 /* LaunchScreen.storyboard */,
-				78AA53BA2B162F8600A63F33 /* Info.plist */,
+				78AA53E12B16321500A63F33 /* Resources */,
 			);
 			path = KalawSweetyHouse;
 			sourceTree = "<group>";
@@ -129,8 +127,11 @@
 		78AA53DC2B16305500A63F33 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				78AA53E02B16320100A63F33 /* Info */,
 				78AA53DD2B16306000A63F33 /* AppDelegate */,
 				78AA53DE2B16308800A63F33 /* SceneDelegate */,
+				78AA53E32B1633BB00A63F33 /* App.swift */,
+				78AA53E52B16366700A63F33 /* main.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -149,6 +150,37 @@
 				78AA53AE2B162F8500A63F33 /* SceneDelegate.swift */,
 			);
 			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		78AA53DF2B1631F800A63F33 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				78AA53B72B162F8600A63F33 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		78AA53E02B16320100A63F33 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				78AA53BA2B162F8600A63F33 /* Info.plist */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		78AA53E12B16321500A63F33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78AA53B52B162F8600A63F33 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78AA53E22B1632CB00A63F33 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +289,6 @@
 			files = (
 				78AA53B92B162F8600A63F33 /* LaunchScreen.storyboard in Resources */,
 				78AA53B62B162F8600A63F33 /* Assets.xcassets in Resources */,
-				78AA53B42B162F8500A63F33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78AA53B12B162F8500A63F33 /* ViewController.swift in Sources */,
+				78AA53E42B1633BB00A63F33 /* App.swift in Sources */,
 				78AA53AD2B162F8500A63F33 /* AppDelegate.swift in Sources */,
+				78AA53E62B16366700A63F33 /* main.swift in Sources */,
 				78AA53AF2B162F8500A63F33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		78AA53B22B162F8500A63F33 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78AA53B32B162F8500A63F33 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		78AA53B72B162F8600A63F33 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -463,10 +487,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53N76S33FJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KalawSweetyHouse/Info.plist;
+				INFOPLIST_FILE = KalawSweetyHouse/Application/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,10 +514,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53N76S33FJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KalawSweetyHouse/Info.plist;
+				INFOPLIST_FILE = KalawSweetyHouse/Application/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
