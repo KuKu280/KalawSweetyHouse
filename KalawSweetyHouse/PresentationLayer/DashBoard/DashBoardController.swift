@@ -26,9 +26,19 @@ class DashBoardController: UIViewController {
     
     
     private func setupUI() {
+        navigationController?.isNavigationBarHidden = true
         navView.layer.shadowColor = UIColor.black.cgColor
         navView.layer.shadowOpacity = 1
         navView.layer.shadowOffset = .zero
         navView.layer.shadowRadius = 7
+    }
+    
+    
+    @IBAction 
+    private func didTapAdd() {
+        navigationController?.pushViewController(
+            AddController(),
+            animated: true
+        )
     }
 }

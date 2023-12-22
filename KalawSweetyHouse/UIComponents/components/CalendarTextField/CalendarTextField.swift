@@ -7,14 +7,32 @@
 
 import UIKit
 
-class CalendarTextField: UIView {
+public class CalendarTextField: NibBasedControl {
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var textField: UITextField!
+    
+    var tappedCalendar: () -> () = {}
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBInspectable
+    private var title: String? {
+        set { titleLabel.text = newValue }
+        get { titleLabel.text }
     }
-    */
+    
+    @IBInspectable
+    private var placeholder: String? {
+        set { textField.placeholder = newValue }
+        get { textField.placeholder }
+    }
+    
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    @IBAction
+    private func didTapCalendar(_ sender: UIButton) {
+        tappedCalendar()
+    }
 
 }

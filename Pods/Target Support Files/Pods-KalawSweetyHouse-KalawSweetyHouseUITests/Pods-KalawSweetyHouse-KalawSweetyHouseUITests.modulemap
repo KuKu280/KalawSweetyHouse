@@ -1,0 +1,6 @@
+framework module Pods_KalawSweetyHouse_KalawSweetyHouseUITests {
+  umbrella header "Pods-KalawSweetyHouse-KalawSweetyHouseUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

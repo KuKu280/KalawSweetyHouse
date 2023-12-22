@@ -1,22 +1,210 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddController" customModule="KalawSweetyHouse" customModuleProvider="target">
             <connections>
+                <outlet property="fromDateTF" destination="HU6-J0-pAA" id="QM1-l6-k0D"/>
+                <outlet property="toDateTF" destination="Gil-56-LXg" id="E3J-Cu-YZG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-HL-1hf" userLabel="navView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kalaw Sweety House Booking System" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKj-Gj-WNO">
+                            <rect key="frame" x="59" y="58" width="275" height="22"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS1-Tb-mhp">
+                            <rect key="frame" x="16" y="58" width="19.666666666666671" height="22"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="arrow.backward" catalog="system"/>
+                            <connections>
+                                <action selector="didTapDismiss" destination="-1" eventType="touchUpInside" id="HDp-Pv-mpQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="sS1-Tb-mhp" firstAttribute="centerY" secondItem="fKj-Gj-WNO" secondAttribute="centerY" id="6Nf-mi-Im9"/>
+                        <constraint firstAttribute="height" constant="90" id="PSb-hV-fvd"/>
+                        <constraint firstItem="fKj-Gj-WNO" firstAttribute="centerX" secondItem="7Vj-HL-1hf" secondAttribute="centerX" id="Y5C-VR-bce"/>
+                        <constraint firstItem="sS1-Tb-mhp" firstAttribute="leading" secondItem="7Vj-HL-1hf" secondAttribute="leading" constant="16" id="oZW-6V-Rzj"/>
+                        <constraint firstAttribute="bottom" secondItem="fKj-Gj-WNO" secondAttribute="bottom" constant="10" id="zsK-Ui-gyO"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6S-BK-rVs">
+                    <rect key="frame" x="0.0" y="90" width="393" height="762"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFc-p7-KgJ">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="510"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-8t-zOM">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="510"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysC-39-qnD" userLabel="nameView" customClass="LabeledTextField" customModule="KalawSweetyHouse" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="20" width="353" height="65"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="65" id="GsE-vA-iGj"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Please Enter Name"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dN4-dS-4nM" userLabel="calendarView">
+                                            <rect key="frame" x="20" y="101" width="353" height="65"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YcQ-GS-pIa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="65"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FpX-EO-Y42">
+                                                            <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="65"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HU6-J0-pAA" userLabel="fromDateView" customClass="CalendarTextField" customModule="KalawSweetyHouse" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="64.666666666666671"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="21/Dec/2023"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="From Date"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yrl-Uc-nSW" userLabel="lineView">
+                                                                    <rect key="frame" x="0.0" y="64.666666666666657" width="166.66666666666666" height="0.3333333333333286"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="0.5" id="m0f-E4-SKP"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fDy-V5-t1G">
+                                                            <rect key="frame" x="186.66666666666663" y="0.0" width="166.33333333333337" height="65"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gil-56-LXg" userLabel="toDateView" customClass="CalendarTextField" customModule="KalawSweetyHouse" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="166.33333333333334" height="64.666666666666671"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="21/Dec/2023"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="To Date"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeG-jf-7R2" userLabel="lineView">
+                                                                    <rect key="frame" x="0.0" y="64.666666666666657" width="166.33333333333334" height="0.3333333333333286"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="0.5" id="tCI-6t-gJR"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="YcQ-GS-pIa" secondAttribute="trailing" id="A6N-0l-dDO"/>
+                                                <constraint firstAttribute="bottom" secondItem="YcQ-GS-pIa" secondAttribute="bottom" id="ECB-1j-AJx"/>
+                                                <constraint firstItem="YcQ-GS-pIa" firstAttribute="leading" secondItem="dN4-dS-4nM" secondAttribute="leading" id="lRy-Dt-BTI"/>
+                                                <constraint firstItem="YcQ-GS-pIa" firstAttribute="top" secondItem="dN4-dS-4nM" secondAttribute="top" id="r6m-9J-ryi"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZA-a7-vSh" userLabel="facebookAccountView" customClass="LabeledTextField" customModule="KalawSweetyHouse" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="182" width="353" height="65"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Please Enter Name"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Facebook Account Name"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-i6-Tgh" userLabel="phoneNumberView" customClass="LabeledTextField" customModule="KalawSweetyHouse" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="263" width="353" height="65"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Please Enter Phone Number"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Phone Number"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g4-q0-owG" userLabel="numberOfPersonView" customClass="LabeledTextField" customModule="KalawSweetyHouse" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="344" width="353" height="65"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="0"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Number of Person"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uak-Ll-ZBr" userLabel="numberOfPersonView" customClass="LabeledTextField" customModule="KalawSweetyHouse" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="425" width="353" height="65"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="0"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Extra Bed"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dN4-dS-4nM" firstAttribute="height" secondItem="ysC-39-qnD" secondAttribute="height" id="1o6-vv-eup"/>
+                                        <constraint firstItem="cZA-a7-vSh" firstAttribute="height" secondItem="ysC-39-qnD" secondAttribute="height" id="Aqd-TP-nui"/>
+                                        <constraint firstItem="4g4-q0-owG" firstAttribute="height" secondItem="s0Q-i6-Tgh" secondAttribute="height" id="VbB-gl-t47"/>
+                                        <constraint firstItem="Uak-Ll-ZBr" firstAttribute="height" secondItem="4g4-q0-owG" secondAttribute="height" id="wuL-GK-TNP"/>
+                                        <constraint firstItem="s0Q-i6-Tgh" firstAttribute="height" secondItem="cZA-a7-vSh" secondAttribute="height" id="z8m-fT-eun"/>
+                                    </constraints>
+                                    <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="BmN-8t-zOM" firstAttribute="top" secondItem="WFc-p7-KgJ" secondAttribute="top" id="905-9D-p2a"/>
+                                <constraint firstAttribute="trailing" secondItem="BmN-8t-zOM" secondAttribute="trailing" id="9YF-Ye-Rqv"/>
+                                <constraint firstAttribute="bottom" secondItem="BmN-8t-zOM" secondAttribute="bottom" id="LUV-5H-sGc"/>
+                                <constraint firstItem="BmN-8t-zOM" firstAttribute="leading" secondItem="WFc-p7-KgJ" secondAttribute="leading" id="ijD-QG-1rg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="WFc-p7-KgJ" firstAttribute="top" secondItem="g6S-BK-rVs" secondAttribute="top" id="0nT-sb-VcN"/>
+                        <constraint firstItem="WFc-p7-KgJ" firstAttribute="centerX" secondItem="g6S-BK-rVs" secondAttribute="centerX" id="0oW-Eo-UpO"/>
+                        <constraint firstAttribute="bottom" secondItem="WFc-p7-KgJ" secondAttribute="bottom" id="P8j-wr-I78"/>
+                        <constraint firstItem="WFc-p7-KgJ" firstAttribute="leading" secondItem="g6S-BK-rVs" secondAttribute="leading" id="Uyq-nh-2bI"/>
+                        <constraint firstAttribute="trailing" secondItem="WFc-p7-KgJ" secondAttribute="trailing" id="bZK-dv-HG1"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Vj-HL-1hf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EQG-0P-dck"/>
+                <constraint firstItem="7Vj-HL-1hf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="F1C-5O-3M7"/>
+                <constraint firstItem="7Vj-HL-1hf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KgD-JX-76L"/>
+                <constraint firstAttribute="bottom" secondItem="g6S-BK-rVs" secondAttribute="bottom" id="Omx-kL-sxA"/>
+                <constraint firstItem="g6S-BK-rVs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Wcx-lM-kKh"/>
+                <constraint firstItem="g6S-BK-rVs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="den-Hi-qV8"/>
+                <constraint firstItem="g6S-BK-rVs" firstAttribute="top" secondItem="7Vj-HL-1hf" secondAttribute="bottom" id="knx-sG-eBy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-2022.1374045801526" y="-21.126760563380284"/>
         </view>
     </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

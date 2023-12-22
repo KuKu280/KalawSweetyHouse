@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		1307FB91FC4F29ECB445B7B1 /* Pods_KalawSweetyHouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84FD2D6D889BE5826EFA6BE /* Pods_KalawSweetyHouseTests.framework */; };
 		41958805F25E14F0410374BD /* Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CAD8400D19E40FE2FAA19D /* Pods_KalawSweetyHouse_KalawSweetyHouseUITests.framework */; };
+		781C5DEB2B30A6EE00150DF1 /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C5DEA2B30A6EE00150DF1 /* LabeledTextField.swift */; };
+		781C5DED2B30A70300150DF1 /* LabeledTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781C5DEC2B30A70300150DF1 /* LabeledTextField.xib */; };
+		781C5DEF2B30A87800150DF1 /* NibBasedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C5DEE2B30A87800150DF1 /* NibBasedControl.swift */; };
+		78246ADD2B1982AF005E2FFE /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246ADB2B1982AF005E2FFE /* AddController.swift */; };
+		78246ADE2B1982AF005E2FFE /* AddController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78246ADC2B1982AF005E2FFE /* AddController.xib */; };
+		78246AE22B199185005E2FFE /* ImageWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246AE12B199185005E2FFE /* ImageWithTextField.swift */; };
+		78246AE52B199724005E2FFE /* UITextFieldExt++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78246AE42B199724005E2FFE /* UITextFieldExt++.swift */; };
+		78268E8B2B348FC300AA1668 /* CalendarTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78268E8A2B348FC300AA1668 /* CalendarTextField.swift */; };
+		78268E8D2B348FD100AA1668 /* CalendarTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78268E8C2B348FD100AA1668 /* CalendarTextField.xib */; };
+		7826A0682B356C70009DA2D3 /* DimmingBackgroundPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7826A0672B356C70009DA2D3 /* DimmingBackgroundPresentationController.swift */; };
+		7826A06C2B356CE9009DA2D3 /* CalendarPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7826A06A2B356CE9009DA2D3 /* CalendarPopupController.swift */; };
+		7826A06D2B356CE9009DA2D3 /* CalendarPopupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7826A06B2B356CE9009DA2D3 /* CalendarPopupController.xib */; };
+		78895AEE2B276C3200DD7E9B /* NibBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78895AED2B276C3200DD7E9B /* NibBaseView.swift */; };
+		78895AF02B276C5600DD7E9B /* NibLoadableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78895AEF2B276C5600DD7E9B /* NibLoadableViewProtocol.swift */; };
 		78AA53AD2B162F8500A63F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53AC2B162F8500A63F33 /* AppDelegate.swift */; };
 		78AA53AF2B162F8500A63F33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AA53AE2B162F8500A63F33 /* SceneDelegate.swift */; };
 		78AA53B62B162F8600A63F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AA53B52B162F8600A63F33 /* Assets.xcassets */; };
@@ -51,6 +65,20 @@
 		385351785C404A646968E977 /* Pods-KalawSweetyHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouse.debug.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouse/Pods-KalawSweetyHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		6FA6EC08D37CBBEE9C235777 /* Pods_KalawSweetyHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalawSweetyHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		734FBD1330B711F874715CC0 /* Pods-KalawSweetyHouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalawSweetyHouseTests.debug.xcconfig"; path = "Target Support Files/Pods-KalawSweetyHouseTests/Pods-KalawSweetyHouseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		781C5DEA2B30A6EE00150DF1 /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
+		781C5DEC2B30A70300150DF1 /* LabeledTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabeledTextField.xib; sourceTree = "<group>"; };
+		781C5DEE2B30A87800150DF1 /* NibBasedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBasedControl.swift; sourceTree = "<group>"; };
+		78246ADB2B1982AF005E2FFE /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		78246ADC2B1982AF005E2FFE /* AddController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddController.xib; sourceTree = "<group>"; };
+		78246AE12B199185005E2FFE /* ImageWithTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithTextField.swift; sourceTree = "<group>"; };
+		78246AE42B199724005E2FFE /* UITextFieldExt++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldExt++.swift"; sourceTree = "<group>"; };
+		78268E8A2B348FC300AA1668 /* CalendarTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTextField.swift; sourceTree = "<group>"; };
+		78268E8C2B348FD100AA1668 /* CalendarTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarTextField.xib; sourceTree = "<group>"; };
+		7826A0672B356C70009DA2D3 /* DimmingBackgroundPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingBackgroundPresentationController.swift; sourceTree = "<group>"; };
+		7826A06A2B356CE9009DA2D3 /* CalendarPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopupController.swift; sourceTree = "<group>"; };
+		7826A06B2B356CE9009DA2D3 /* CalendarPopupController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarPopupController.xib; sourceTree = "<group>"; };
+		78895AED2B276C3200DD7E9B /* NibBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBaseView.swift; sourceTree = "<group>"; };
+		78895AEF2B276C5600DD7E9B /* NibLoadableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableViewProtocol.swift; sourceTree = "<group>"; };
 		78AA53A92B162F8500A63F33 /* KalawSweetyHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalawSweetyHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AA53AC2B162F8500A63F33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78AA53AE2B162F8500A63F33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +143,97 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		781C5DE92B30A6CC00150DF1 /* LabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				781C5DEA2B30A6EE00150DF1 /* LabeledTextField.swift */,
+				781C5DEC2B30A70300150DF1 /* LabeledTextField.xib */,
+			);
+			path = LabeledTextField;
+			sourceTree = "<group>";
+		};
+		78246ADA2B198295005E2FFE /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				78895AE72B2765CA00DD7E9B /* view */,
+				78246ADB2B1982AF005E2FFE /* AddController.swift */,
+				78246ADC2B1982AF005E2FFE /* AddController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		78246ADF2B198CEA005E2FFE /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7826A0662B356C48009DA2D3 /* presentation-controller */,
+				78895AEC2B276C1000DD7E9B /* nib-loadable-view */,
+				78246AE02B198E31005E2FFE /* components */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		78246AE02B198E31005E2FFE /* components */ = {
+			isa = PBXGroup;
+			children = (
+				78268E892B348FA000AA1668 /* CalendarTextField */,
+				781C5DE92B30A6CC00150DF1 /* LabeledTextField */,
+				78246AE12B199185005E2FFE /* ImageWithTextField.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		78246AE32B19970C005E2FFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78246AE42B199724005E2FFE /* UITextFieldExt++.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78268E892B348FA000AA1668 /* CalendarTextField */ = {
+			isa = PBXGroup;
+			children = (
+				78268E8A2B348FC300AA1668 /* CalendarTextField.swift */,
+				78268E8C2B348FD100AA1668 /* CalendarTextField.xib */,
+			);
+			path = CalendarTextField;
+			sourceTree = "<group>";
+		};
+		7826A0662B356C48009DA2D3 /* presentation-controller */ = {
+			isa = PBXGroup;
+			children = (
+				7826A0672B356C70009DA2D3 /* DimmingBackgroundPresentationController.swift */,
+			);
+			path = "presentation-controller";
+			sourceTree = "<group>";
+		};
+		7826A0692B356CC7009DA2D3 /* calendarPopView */ = {
+			isa = PBXGroup;
+			children = (
+				7826A06A2B356CE9009DA2D3 /* CalendarPopupController.swift */,
+				7826A06B2B356CE9009DA2D3 /* CalendarPopupController.xib */,
+			);
+			path = calendarPopView;
+			sourceTree = "<group>";
+		};
+		78895AE72B2765CA00DD7E9B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7826A0692B356CC7009DA2D3 /* calendarPopView */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		78895AEC2B276C1000DD7E9B /* nib-loadable-view */ = {
+			isa = PBXGroup;
+			children = (
+				78895AED2B276C3200DD7E9B /* NibBaseView.swift */,
+				78895AEF2B276C5600DD7E9B /* NibLoadableViewProtocol.swift */,
+				781C5DEE2B30A87800150DF1 /* NibBasedControl.swift */,
+			);
+			path = "nib-loadable-view";
+			sourceTree = "<group>";
+		};
 		78AA53A02B162F8500A63F33 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +259,8 @@
 		78AA53AB2B162F8500A63F33 /* KalawSweetyHouse */ = {
 			isa = PBXGroup;
 			children = (
+				78246AE32B19970C005E2FFE /* Extensions */,
+				78246ADF2B198CEA005E2FFE /* UIComponents */,
 				78AA968C2B16489D003D8FC8 /* Data */,
 				78AA96872B1647B7003D8FC8 /* Network */,
 				78AA53E22B1632CB00A63F33 /* PresentationLayer */,
@@ -223,6 +344,7 @@
 		78AA53E22B1632CB00A63F33 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				78246ADA2B198295005E2FFE /* Add */,
 				78AA96952B165093003D8FC8 /* DashBoard */,
 			);
 			path = PresentationLayer;
@@ -385,9 +507,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				78AA96942B16508F003D8FC8 /* DashBoardController.xib in Resources */,
+				78268E8D2B348FD100AA1668 /* CalendarTextField.xib in Resources */,
+				7826A06D2B356CE9009DA2D3 /* CalendarPopupController.xib in Resources */,
 				78AA53B92B162F8600A63F33 /* LaunchScreen.storyboard in Resources */,
 				78AA53B62B162F8600A63F33 /* Assets.xcassets in Resources */,
 				78AA53E92B1638E900A63F33 /* GoogleService-Info.plist in Resources */,
+				78246ADE2B1982AF005E2FFE /* AddController.xib in Resources */,
+				781C5DED2B30A70300150DF1 /* LabeledTextField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,13 +642,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				78AA96932B16508F003D8FC8 /* DashBoardController.swift in Sources */,
+				78268E8B2B348FC300AA1668 /* CalendarTextField.swift in Sources */,
 				78AA53E42B1633BB00A63F33 /* App.swift in Sources */,
+				7826A06C2B356CE9009DA2D3 /* CalendarPopupController.swift in Sources */,
 				78AA96892B1647C5003D8FC8 /* FirebaseApi.swift in Sources */,
+				78246ADD2B1982AF005E2FFE /* AddController.swift in Sources */,
 				78AA53AD2B162F8500A63F33 /* AppDelegate.swift in Sources */,
+				78246AE22B199185005E2FFE /* ImageWithTextField.swift in Sources */,
 				78AA53E62B16366700A63F33 /* main.swift in Sources */,
+				78895AEE2B276C3200DD7E9B /* NibBaseView.swift in Sources */,
+				781C5DEF2B30A87800150DF1 /* NibBasedControl.swift in Sources */,
+				7826A0682B356C70009DA2D3 /* DimmingBackgroundPresentationController.swift in Sources */,
 				78AA53AF2B162F8500A63F33 /* SceneDelegate.swift in Sources */,
+				78895AF02B276C5600DD7E9B /* NibLoadableViewProtocol.swift in Sources */,
+				78246AE52B199724005E2FFE /* UITextFieldExt++.swift in Sources */,
 				78AA968B2B164856003D8FC8 /* CloudFireStoreFirebaseApiImpl.swift in Sources */,
 				78AA968E2B1648C3003D8FC8 /* KSHRespnse.swift in Sources */,
+				781C5DEB2B30A6EE00150DF1 /* LabeledTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +756,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -674,7 +810,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -699,16 +835,23 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DT_TOOLCHAIN_DIR)/us/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KalawSweetyHouse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KalawSweetyHouse.v1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TOOLCHAIN_DIR = "$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain";
 			};
 			name = Debug;
 		};
@@ -727,16 +870,23 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DT_TOOLCHAIN_DIR)/us/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KalawSweetyHouse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KalawSweetyHouse.v1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TOOLCHAIN_DIR = "$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain";
 			};
 			name = Release;
 		};

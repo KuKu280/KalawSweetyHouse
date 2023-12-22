@@ -6,24 +6,71 @@
 //
 
 import UIKit
+import FSCalendar
 
 class CalendarPopupController: UIViewController {
+    
+    
+    @IBOutlet var calendarView: FSCalendar!
+    
+    override var transitioningDelegate: UIViewControllerTransitioningDelegate? {
+        get { self }
+        set {}
+    }
+    
+    override var modalPresentationStyle: UIModalPresentationStyle {
+        get { .custom }
+        set {}
+    }
+    
+    var didTapSelectedDateDone : ((String) -> Void) = { _ in }
+    var selectedDate = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        calendarView.delegate = self
+        calendarView.dataSource = self
+        
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction 
+    private func didTapCancel(_ sender: UIButton) {
+        dismiss(animated: true)
     }
-    */
+    
+    
+    @IBAction 
+    private func didTapDone(_ sender: UIButton) {
+        didTapSelectedDateDone(selectedDate)
+        dismiss(animated: true)
+    }
+    
+}
 
+extension CalendarPopupController: FSCalendarDelegate, FSCalendarDataSource {
+    
+    func calendar(
+        _ calendar: FSCalendar,
+        didSelect date: Date,
+        at monthPosition: FSCalendarMonthPosition
+    ) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MMM/yyyy"
+        let result = formatter.string(from: date)
+        self.selectedDate = result
+    }
+}
+
+extension CalendarPopupController: UIViewControllerTransitioningDelegate {
+    
+    func presentationController(
+        forPresented presented: UIViewController,
+        presenting: UIViewController?,
+        source: UIViewController
+    ) -> UIPresentationController? {
+        DimmingBackgroundPresentationController(
+            presentedViewController: presented,
+            presenting: presenting
+        )
+    }
 }

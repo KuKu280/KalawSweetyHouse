@@ -47,7 +47,8 @@ extension App {
 
 extension App {
     func setRoot(viewController: UIViewController, animated: Bool = true) {
-        window.rootViewController = viewController
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window.rootViewController = navigationController
         UIView.transition(
             with: window,
             duration: 0.25,
